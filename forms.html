@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>forms|varities</title>
+    </head>
+    <body bgcolor="lightgrey">
+        <!---student registration form--->
+
+        <div style="background-color: antiquewhite;"> 
+ <h2 align="center" >STUDENT REGISTRATION FORM</h2><br><br>
+
+<p><strong>STUDENT NAME :</strong></p>
+<form action="processes.php" method="post">
+  Firstname:<input type="text" name="txtfirstname" placeholder="firstname" required>*<br><br>
+  Middlename:<input type="text" name="txtmiddlename" placeholder="middlename" required>*<br><br>
+ lastname:<input type="text" name="txtlastname" placeholder="lastname" required>*<br><br>
+
+ <h4>DOB :</h4>
+ 
+     <input type="date"/>
+
+ <h4>Gender :</h4>   
+<input type="radio" name="rdgender" value="male">MALE<br>
+<input type="radio" name="rdgender" value="female">FEMALE<br>
+<input type="radio" name="rdgender" value="transgender">TRANSGENDER<br>
+
+<h4>Address :</h4>
+<textarea></textarea><br><br>
+<h4>City:</h4><input type="text" name="txtcity" required><br><br>
+<h4>Pincode:</h4><input type="text" name="txtpincode" required><br>
+<h4>E-mail:</h4><input type="text" name="txtemail" placeholder="email@gamil.com"><br>
+<h4>Mobile Number:</h4><input type="text" name="txtnumber" placeholder="xxxxxxxxxx"><br>
+<h4>Course</h4>
+<select>
+    <option>B.COM</option>
+    <option>BSC</option>
+    <option>BCA</option>
+</select>
+<h4>Comment</h4>
+<textarea name="comment" cols="30" rows="10"></textarea><br><br>
+<input type="submit" name="submit" value="submit">
+
+</form>
+</div>
+       <!--sign up form-->
+
+    <div style="background-color: aqua;" align="center">
+    <h2>Sign Up Form</h2><br><br>
+        <form action="processes.php" method="post">
+            <input type="text" name="txtfstname" placeholder="Firstname"><br><br>
+            <input type="text" name="txtlstname" placeholder="lastname"><br><br>
+            <input type="text" name="txtemail" placeholder="E-mail"><br><br>
+            <input type="password" name="password" placeholder="Password"><br><br>
+            <p><strong>Already AccountHolder?LOGIN</strong></p>
+            <input type="button" value="submit">
+        </form>
+    </div>
+    <!--leave a reply-->
+    <div>
+        <br><br>
+        <br>
+        <br>
+        <table align="center" bgcolor="lightblue" cellpadding="20" cellspacing="0">
+
+            <tr>
+                <td>
+<h2>Leave A Reply</h2>
+            
+                <p>your email address will not be published.Required fields are marked*</p>
+                <form method="post">
+                <h4>Name*</h4>
+                <input type="text" class="txtname" required size="30"><br>
+                <h4>Email*</h4>
+                <input type="text" class="txtemail" required size="30"><br>
+                <h4>Website*</h4>
+                <input type="url" class="txtwebsite" required size="30"><br>
+                <br>
+                <input type="checkbox" name="savedetail">Save my name ,Email and website in the browser for the next comment<br><br>
+                <textarea rows="10" cols="30" placeholder="type the comment"></textarea><br><br>
+                &emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <button type="button">
+                    <fornt size="3">
+                        &emsp;&nbsp;&ensp;&emsp;Send &emsp;&nbsp;&ensp;&emsp;</fornt>
+                </button>
+                </form>
+            
+                 </td>
+
+        </table>
+    </div>
+     <br>
+        <!--online booking form-->
+
+    <div>
+        <br><br>
+        <br>
+        <table align="center" bgcolor="lightyellow" cellpadding="30" cellspaccing="0">
+            <tr>
+                <td>
+                 <h2>Online Booking Form</h2>
+                 <p>To Reserve Seat Fill The Details and Submit*</p>
+               <form method="post">
+                   <br>
+                   <h4>First Name*&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Last Name*</h4>
+                   <input type="text" name="txtname" size="30">&emsp;
+                   <input type="text" name="txtlstname" size="30"><br>
+                   <h4>Email*</h4>
+                   <input type="text" name="txtemail" size="30" placeholder="1234@gmail.com">
+                   <h4>Mobile*</h4>
+                   <input type="number" name="txtnum" size="30" placeholder="mobilenumber">
+                   <h4>Departure date/time*</h4>
+                   <input type="datetime-local" name="datetime">
+                   <select>
+                       <option value="AM">AM</option>
+                       <option value="PM">PM</option>
+                   </select>
+                   <h4>Pickup Address*</h4>
+                   <textarea rows="7" cols="50"></textarea>
+                   <h4>Drop Address*</h4>
+                   <textarea rows="7" cols="50"></textarea>
+                   <h4>Journey type*</h4>
+                   <select>
+                    <option value=""required>--please select--</option>
+                    <option value="text">one-way</option>
+                    <option value="text">Return</option>
+                   </select>
+                   <h4>Return date/time*</h4>
+                   <input type="datetime-local" name="datetime">
+                   <select>
+                       <option value="AM">AM</option>
+                       <option value="PM">PM</option>
+                   </select>
+                 
+                   <h4>No.of Passengers</h4>
+                   <input type="text" name="txtname" size="30">
+
+                   <h4>Additional message</h4>
+                   <textarea rows="7" cols="50" rows="7"></textarea><br><br>
+                   &emsp;&nbsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <button type="button">
+                    <fornt size="3">
+                        &emsp;&nbsp;&ensp;&emsp;Send&emsp;&emsp;&emsp;</fornt>
+                </button>
+
+               </form>
+                </td>
+            </tr>
+        </table>
+    </div><br><br>
+    <!--product order form-->
+
+    <div>
+        <form method="post">
+        <table bgcolor="white" cellspacing="" cellpadding="20" align="center">
+            <tr><h1 align="center">Product Order Form</h1></tr>
+            <tr>
+                <td>
+                    <table>
+                        <td>    
+                            <input type="checkbox" name="checkboxmsg">
+                        </td>
+                        <td>
+                            <img src="T-shirts.jpg" alt="t-shirts pic" width="160" height="205">
+                        </td>
+                        <td>&emsp;</td>
+                        <td><h2>Rs.250 &emsp;<strike>Rs.500</strike>(50% OFF)</h2>
+                            <h3>Navy Blue T-shirt For Men</h3>
+                            <p>Simple Design 100% Pure Cotton</p><br>
+                            <p>Quantity<select>
+                                <option required>--select--</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select></p>
+                            <p>Size<select>
+                                <option required>--select--</option>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                                <option>XL</option>
+                                <option>XXL</option>
+                            </select></p>
+                        </td><br>
+                        
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <table>
+                        <td>    
+                            <input type="checkbox" name="checkboxmsg">
+                        </td>
+                        <td>
+                            <img src="T-shirts_1.jpg" alt="t-shirts pic" width="160" height="205">
+                        </td>
+                        <td>&emsp;</td>
+                        <td><h2>Rs.250 &emsp;<strike>Rs.500</strike>(50% OFF)</h2>
+                            <h3>WhiteBlue T-shirt For Men</h3>
+                            <p>Simple Design 100% Pure Cotton</p><br>
+                            <p>Quantity<select>
+                                <option required>--select--</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select></p>
+                            <p>Size<select>
+                                <option required>--select--</option>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                                <option>XL</option>
+                                <option>XXL</option>
+                            </select></p>
+                        </td><br>
+                        
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <table>
+                        <td>    
+                            <input type="checkbox" name="checkboxmsg">
+                        </td>
+                        <td>
+                            <img src="T-shirts_3.jpg" alt="t-shirts pic" width="160" height="205">
+                        </td>
+                        <td>&emsp;</td>
+                        <td><h2>Rs.250 &emsp;<strike>Rs.500</strike>(50% OFF)</h2>
+                            <h3>BoxPrinter T-shirt For Men</h3>
+                            <p>Simple Design 100% Pure Cotton</p><br>
+                            <p>Quantity<select>
+                                <option required>--select--</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select></p>
+                            <p>Size<select>
+                                <option required>--select--</option>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                                <option>XL</option>
+                                <option>XXL</option>
+                            </select></p>
+                        </td><br>
+                                 
+                    </table>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="button" value="Move To Cart">
+                </td>
+            </tr>
+            
+        </table>
+        </form>
+    </div> 
+    <a href="Form_2.html">Next form</a>    
+    </body>
+    </html>
